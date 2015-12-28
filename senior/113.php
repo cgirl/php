@@ -53,7 +53,7 @@ class Human2{
     public function send($much){
         if($much >= $this->money+$this->bank){
             return false;
-        } else if($much <= $this->money+$this->bank) {
+        } else if($much >= $this->money) {
             $num = $much-$this->money; //需要从银行取多少钱
             $this->money += $this->getBank($num);
             $this->money -= $much;
@@ -62,7 +62,6 @@ class Human2{
             $this->money -= $much;
             return $much;
         }
-        return $this->money * 0.8;
     }
     
     public function showmoney(){
