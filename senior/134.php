@@ -158,7 +158,7 @@ interface UserFunny{
  * 因为这两个类，都要事先上述接口，通过这个接口，就可以规范开发
  */
 /*
- *下面这个类和接口声明的参数不一样，就报错，这样，接口强制统一了接口
+ *下面这个类和接口声明的参数不一样，就报错，这样，接口强制统一了
  
 class User implements UserBase{
     public function login($u) {
